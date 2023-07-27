@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              komla: "#F85559",
+              komla2: "#FBC0A8",
+              //   'line-color': rgba(18, 18, 18, 0.10);
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-lato md:container md:mx-auto">
+    <header>
+      <!-- <h3 class="bg-red-400 font-bold text-center text-6xl">Hello world</h3> -->
+      <nav class="footer footer-center p-7 bg-komla text-primary-content mt-10 rounded-full">
+        <div class="grid grid-flow-col gap-4">
+          <p class="font-semibold text-lg text-white">
+            Home
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            About Us
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            Shop
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            All Fruits
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            Support
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            My Account
+          </p> 
+          <img src="./images/logo.png " alt="">
+          <p class="font-bold text-4xl text-white">
+            Fruit Burst
+          </p> 
+          <button class="btn btn-wide rounded-full"> Search here</i></button>
+        </div> 
+      </nav>
+    </header>
+
+    <main class="">
+      <!-- Deal of the Day -->
+      <section >
+        <div class="flex flex-row gap-20 my-16">
+            <div class="w-[500px] flex-1">
+                <h3 class="font-bold text-5xl my-6">Deal of the day</h3>
+                <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 ">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-bold">
+                    <span style="--value:29;"></span>:
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-bold">
+                    <span style="--value:15;"></span>:
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-bold">
+                    <span style="--value:25;"></span>:
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-bold">
+                    <span style="--value:08;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4">
+          <div class="card h-[477px] w-[342px] bg-base-100 shadow-xl mb-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl my-8" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
+              <hr
+                class="w-[244px] h-[1px] mx-auto my-1 bg-gray-200 border-0 rounded md:my-1 dark:bg-gray-700"
+              />
+              <h4 class="text-xl font-medium text-xs mb-6">Apples</h4>
+
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+              </div>
+              <h3 class="text-komla text-xl font-bold my-6">Details</h3>
+            </div>
+          </div>
+          <div class="card h-[477px] w-[342px] bg-base-100 shadow-xl mb-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl my-8" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
+              <hr
+                class="w-[244px] h-[1px] mx-auto my-1 bg-gray-200 border-0 rounded md:my-1 dark:bg-gray-700"
+              />
+              <h4 class="text-xl font-medium text-xs mb-6">Oranges</h4>
+
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+              </div>
+              <h3 class="text-komla text-xl font-bold my-6">Details</h3>
+            </div>
+          </div>
+          <div class="card h-[477px] w-[342px] bg-base-100 shadow-xl mb-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl my-8" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
+              <hr
+                class="w-[244px] h-[1px] mx-auto my-1 bg-gray-200 border-0 rounded md:my-1 dark:bg-gray-700"
+              />
+              <h4 class="text-xl font-medium text-xs mb-6">Red Dragon</h4>
+
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+              </div>
+              <h3 class="text-komla text-xl font-bold my-6">Details</h3>
+            </div>
+          </div>
+          <div class="card h-[477px] w-[342px] bg-base-100 shadow-xl mb-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl my-8" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
+              <hr
+                class="w-[244px] h-[1px] mx-auto my-1 bg-gray-200 border-0 rounded md:my-1 dark:bg-gray-700"
+              />
+              <h4 class="text-xl font-medium text-xs mb-6">Banana</h4>
+
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-komla"
+                />
+              </div>
+              <h3 class="text-komla text-xl font-bold my-6">Details</h3>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-error text-white">Show All</button>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="text-center">
+        <i class="fa-brands fa-facebook text-6xl text-komla"></i>
+        <i class="fa-brands fa-facebook text-6xl text-komla"></i>
+    </div> -->
+    <!-- <footer class="">
+        <div class="flex flex-row bg-komla">
+       <div class="ml-auto bg-komla py-4">
+        <img src="./logo.png " alt="">
+       </div>
+       <div class=" mr-auto w-[400px] ">
+        <p class="py-5 font-bold text-5xl text-white">Fruit Burst</p>
+       </div>
+    </div>
+    <div class="mt-5 grid grid-cols-3 text-center mx-auto">
+        <div class="bg-red-400 w-[100px]">1</div>
+        <div class="bg-gray-400 w-[100px]">2</div>
+
+    </div>
+    </footer> -->
+    <footer>
+      <footer class="footer footer-center p-10 bg-black text-primary-content mt-10">
+        <div class="grid grid-flow-col gap-4">
+          <img src="./images/logo.png " alt="">
+          <p class="font-bold text-4xl">
+            Fruit Burst
+          </p> 
+        </div> 
+        <div class="grid grid-flow-col gap-4">
+          <p class="font-semibold text-lg text-white">
+            Home
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            About Us
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            Shop
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            All Fruits
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            Support
+          </p> 
+          <p class="font-semibold text-lg text-white">
+            My Account
+          </p> 
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a><i class="fa-brands fa-twitter text-4xl text-white"></i></a> 
+            <a><i class="fa-brands fa-youtube text-4xl text-white"></i></a> 
+            <a><i class="fa-brands fa-facebook text-4xl text-white"></i></a>
+            <a><i class="fa-brands fa-apple text-white text-4xl"></i></a>
+            <a><i class="fa-brands fa-line text-4xl text-white"></i></a>
+            <a><i class="fa-brands fa-instagram text-4xl text-white"></i></a>
+          </div>
+        </div>
+      </footer>
+    </footer>
+  </body>
+</html>
